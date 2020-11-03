@@ -1,8 +1,4 @@
 #!/bin/bash
-if (( $EUID != 0 )); then
-  echo 'This script only works when run as root!'
-  exit
-fi
 apt-get -y install `cat package.php`
 mv Ubuntu-20.04-fs_overlay.tar.bz2 /
 export MOVEBACKTO=`pwd`
