@@ -12,4 +12,4 @@ add-apt-repository ppa:certbot/certbot
 
 echo 'Install completed, installing SSL'
 
-certbot --nginx -d streamserver.se -d www.streamserver.se
+certbot --nginx -d matforsonline.se -d www.matforsonline.se
