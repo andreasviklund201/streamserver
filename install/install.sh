@@ -8,6 +8,6 @@ mv /Ubuntu-20.04-fs_overlay.tar.bz2 "$MOVEBACKTO"
 cd "$MOVEBACKTO"
 systemctl enable nginx
 systemctl restart nginx
-add-apt-repository ppa:certbot/certbot
+add-apt-repository -y ppa:certbot/certbot
 
 echo 'Install completed, installing SSL'
