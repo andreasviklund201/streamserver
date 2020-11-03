@@ -8,4 +8,8 @@ mv /Ubuntu-20.04-fs_overlay.tar.bz2 "$MOVEBACKTO"
 cd "$MOVEBACKTO"
 systemctl enable nginx
 systemctl restart nginx
-echo 'Install completed, check the README for next steps'
+add-apt-repository ppa:certbot/certbot
+
+echo 'Install completed, installing SSL'
+
+certbot --nginx -d streamserver.se -d www.streamserver.se
