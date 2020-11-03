@@ -9,5 +9,9 @@ cd "$MOVEBACKTO"
 systemctl enable nginx
 systemctl restart nginx
 add-apt-repository -y ppa:certbot/certbot
-
+mkdir /root/install/wordpress
+cd /root/install/wordpress
+wget -O /tmp/wordpress.tar.gz https://wordpress.org/latest.tar.gz
+sudo tar -xzvf /tmp/wordpress.tar.gz -C /var/www
+cp /var/www/wordpress/* /var/www/html
 echo 'Install completed, installing SSL'
