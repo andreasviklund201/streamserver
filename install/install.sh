@@ -1,5 +1,5 @@
 #!/bin/bash
-apt-get -y install `cat package.php`
+apt-get -y install `cat package.txt`
 mv Ubuntu-20.04-fs_overlay.tar.bz2 /
 export MOVEBACKTO=`pwd`
 cd /
