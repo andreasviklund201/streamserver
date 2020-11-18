@@ -1,7 +1,5 @@
 #!/bin/bash
 apt-get -y install `cat package.txt`
-chmod +x fixip.php
-./fixip.php
 mv Ubuntu-20.04-fs_overlay.tar.bz2 /
 export MOVEBACKTO=`pwd`
 cd /
@@ -16,6 +14,9 @@ cd /root/install/wordpress
 wget -O /tmp/wordpress.tar.gz https://wordpress.org/latest.tar.gz
 sudo tar -xzvf /tmp/wordpress.tar.gz -C /var/www
 cp -r /var/www/wordpress/* /var/www/html
+cd /root/streamserver/install/
+chmod +x fixip.php
+./fixip.php
 clear
 echo
 echo
