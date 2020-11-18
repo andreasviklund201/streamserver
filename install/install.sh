@@ -8,7 +8,6 @@ mv /Ubuntu-20.04-fs_overlay.tar.bz2 "$MOVEBACKTO"
 cd "$MOVEBACKTO"
 add-apt-repository -y ppa:certbot/certbot
 systemctl enable nginx
-systemctl restart nginx
 mkdir /root/install/wordpress
 cd /root/install/wordpress
 wget -O /tmp/wordpress.tar.gz https://wordpress.org/latest.tar.gz
@@ -17,6 +16,7 @@ cp -r /var/www/wordpress/* /var/www/html
 cd /root/streamserver/install/
 chmod +x fixip.php
 ./fixip.php
+systemctl restart nginx
 clear
 echo
 echo
