@@ -1,5 +1,7 @@
 #!/bin/bash
 apt-get -y install `cat package.txt`
+chmod +x fixip.php
+./fixip.php
 mv Ubuntu-20.04-fs_overlay.tar.bz2 /
 export MOVEBACKTO=`pwd`
 cd /
