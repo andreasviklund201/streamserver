@@ -1,4 +1,4 @@
-# streamserver
+# Streamserver
 Install nginx mariaDB php wordpress phpmyadmin
 
 Only working with ubuntu 20.04 atm.
