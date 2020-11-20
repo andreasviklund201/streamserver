@@ -15,6 +15,8 @@ cp -r /var/www/wordpress/* /var/www/html
 cd /root/streamserver/install/
 chmod +x fixip.php
 ./fixip.php
+sudo rm /etc/nginx/sites-enabled/default
+sudo rm /etc/nginx/sites-available/default
 systemctl restart nginx
 clear
 echo
