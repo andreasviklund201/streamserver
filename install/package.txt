@@ -51,3 +51,4 @@ php7.4-zip
 php7.4
 php
 libnginx-mod-rtmp
+phpmyadmin
