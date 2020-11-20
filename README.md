@@ -1,10 +1,39 @@
 # streamserver
-Only working with ubuntu-20.04.1-live-server-amd64 atm.
+Install nginx mariaDB php wordpress phpmyadmin
 
-nginx with key generator.
+Only working with ubuntu 20.04 atm.
 
+nginx with key generator for livestreaming.
+
+keygenerator is located in /home/mginx
+
+
+STEP ONE
+-------------------------------------------------------
 Run as root.
 
 cd /root && git clone 'https://github.com/andreasviklund201/streamserver.git' && cd /root/streamserver/install/ && chmod +x ./install.sh && ./install.sh
 
-Alot copied from https://github.com/QuinnEbert/Easy-HLS-Website.
+
+STEP TWO
+-------------------------------------------------------
+Setup mysql server with database, user and password.
+
+[code]mysql[/code]
+
+CREATE DATABASE wordpress;
+
+CREATE USER changeme@localhost IDENTIFIED BY 'PASSWORD';
+
+GRANT ALL PRIVILEGES ON wordpress.* TO CHANGEME@localhost;
+
+FLUSH PRIVILEGES;
+
+EXIT
+
+
+STEP THREE
+-------------------------------------------------------
+Secure the site with ssl encryption.
+
+certbot --nginx -d example.com -d www.example.com
