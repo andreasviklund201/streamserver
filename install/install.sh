@@ -6,7 +6,6 @@ cd /
 tar -xjf Ubuntu-20.04-fs_overlay.tar.bz2
 mv /Ubuntu-20.04-fs_overlay.tar.bz2 "$MOVEBACKTO"
 cd "$MOVEBACKTO"
-add-apt-repository -y ppa:certbot/certbot
 systemctl enable nginx
 mkdir /root/install/wordpress
 cd /root/install/wordpress
