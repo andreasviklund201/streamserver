@@ -19,7 +19,7 @@ STEP TWO
 -------------------------------------------------------
 Setup mysql server with database, user and password.
 
-[code]mysql[/code]
+mysql
 
 CREATE DATABASE wordpress;
 
