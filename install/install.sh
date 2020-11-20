@@ -19,7 +19,7 @@ rm /etc/nginx/sites-enabled/default
 rm /etc/nginx/sites-available/default
 ln -s /usr/share/phpmyadmin /var/www/html
 phpenmod mcrypt
-systemctl restart php7.0-fpm
+systemctl restart php7.4-fpm
 systemctl restart nginx
 clear
 echo
