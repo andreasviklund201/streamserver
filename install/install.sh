@@ -27,9 +27,9 @@ systemctl restart nginx
 clear
 echo
 echo		'######################################################################'
-echo		'#    Install completed, remember to create database for wordpress    #'
-echo		'# 																	  #'
-echo		'#																	  #'
-echo		'#  Edit /etc/nginx/sites-available/streamer.conf with your domain    #'
-echo		'#																	  #'
+echo		'#'   'Install completed, remember to create database for wordpress' '#'
+echo		'#'																	 '#'
+echo		'#'																	 '#'
+echo		'#''Edit /etc/nginx/sites-available/streamer.conf with your domain'  '#'
+echo		'#'																	 '#'
 echo		'######################################################################'
