@@ -26,7 +26,6 @@ systemctl enable stunnel4.service
 systemctl restart stunnel4.service
 systemctl restart php7.4-fpm
 systemctl restart nginx
-clear
 echo
 echo
 echo 'Install completed, remember to create database for wordpress'
