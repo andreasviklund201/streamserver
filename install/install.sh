@@ -18,11 +18,10 @@ chmod +x fixip.php
 rm /etc/nginx/sites-enabled/default
 rm /etc/nginx/sites-available/default
 ln -s /usr/share/phpmyadmin /var/www/html
-phpenmod mcrypt
 cp /home/nginx/php.ini /etc/php/7.4/fpm
 echo ENABLE=1 >> /etc/default/stunnel4
 cp /home/nginx/stunnel.conf /etc/stunnel/
-systemctl enable stunnel4.service
+/lib/systemd/systemd-sysv-install enable stunnel4
 systemctl restart stunnel4.service
 systemctl restart php7.4-fpm
 systemctl restart nginx
