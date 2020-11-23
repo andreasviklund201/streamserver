@@ -1,3 +1,4 @@
+stunnel4
 mariadb-client-10.3
 mariadb-client-core-10.3
 mariadb-client
