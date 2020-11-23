@@ -5,7 +5,7 @@ Only working with ubuntu 20.04 atm.
 
 nginx with key generator for livestreaming.
 
-keygenerator is located in /home/nginx
+Keygenerator is located in /home/nginx
 
 
 STEP ONE
