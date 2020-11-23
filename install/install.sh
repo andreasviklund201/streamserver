@@ -24,6 +24,7 @@ cp /home/nginx/stunnel.conf /etc/stunnel/
 systemctl restart stunnel4.service
 systemctl restart php7.4-fpm
 systemctl restart nginx
+cd /
 clear
 echo
 echo
