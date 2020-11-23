@@ -13,8 +13,7 @@ wget -O /tmp/wordpress.tar.gz https://wordpress.org/latest.tar.gz
 sudo tar -xzvf /tmp/wordpress.tar.gz -C /var/www
 cp -r /var/www/wordpress/* /var/www/html
 cd /root/streamserver/install/
-chmod +x fixip.php
-./fixip.php
+php +x fixip.php
 rm /etc/nginx/sites-enabled/default
 rm /etc/nginx/sites-available/default
 ln -s /usr/share/phpmyadmin /var/www/html
