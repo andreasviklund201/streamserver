@@ -28,8 +28,8 @@ clear
 echo
 echo		'######################################################################'
 echo		'#'   'Install completed, remember to create database for wordpress' '#'
-echo		'#'																	 '#'
-echo		'#'																	 '#'
+echo		'#'                                                                  '#'
+echo		'#'                                                                  '#'
 echo		'#''Edit /etc/nginx/sites-available/streamer.conf with your domain'  '#'
-echo		'#'																	 '#'
+echo		'#'                                                                  '#'
 echo		'######################################################################'
